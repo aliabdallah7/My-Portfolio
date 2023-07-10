@@ -2,6 +2,7 @@ var typed = new Typed(".text", {
     strings: ["Junior Software Engineer" , "Junior Data Analyst"],
     typeSpeed: 110,
     backSpeed: 110,
+    startDelay: 2100,
     backDelay: 1000,
     loop: true
 });
@@ -48,6 +49,11 @@ window.onscroll = () => {
     // remove toggle icon and navbar when click navbar links (scroll)
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
-};
+
+    // animation footer on scroll
+    let footer = document.querySelector('footer');
+
+    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
+}
 
 

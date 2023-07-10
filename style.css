@@ -288,6 +288,7 @@ section {
 }
 
 .heading {
+  position: relative;
   font-size: 5rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -333,10 +334,13 @@ span {
 }
 
 .about-content h3 {
+  position: relative;
+  display: inline-block;
   font-size: 2.6rem;
 }
 
 .about-content p {
+  position: relative;
   font-size: 2rem;
   margin: 2rem 0 3rem;
 }
@@ -370,11 +374,14 @@ span {
 }
 
 .education-column .title {
+  position: relative;
+  display: inline-block;
   font-size: 2.5rem;
   margin: 0 0 1.5rem 2rem;
 }
 
 .education-column .education-box {
+  position: relative;
   border-left: .2rem solid var(--main-color);
 }
 
@@ -445,6 +452,12 @@ span {
   background: black;
 }
 
+.skills h2 {
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .skills .skills-row {
   display: flex;
   flex-wrap: wrap;
@@ -456,8 +469,14 @@ span {
 }
 
 .skills-column .title {
+  position: relative;
+  display: inline-block;
   font-size: 2.5rem;
   margin: 0 0 1.5rem;
+}
+
+.skills-column .skills-box {
+  position: relative;
 }
 
 .skills-box .skills-content {
@@ -561,6 +580,13 @@ span {
   padding-bottom: 7rem;
 }
 
+.contact h2 
+{
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .contact form {
   max-width: 70rem;
   margin: 0 auto;
@@ -639,6 +665,11 @@ span {
   background: var(--second-bg-color);
 }
 
+.footer-text,
+.footer-iconTop {
+  position: relative;
+}
+
 .footer-text p {
   font-size: 1.6rem;
 }
@@ -685,17 +716,17 @@ span {
 /* Animation Reload and scroll */
 .animate {
   position: absolute;
-  top: 0%;
-  right: 0%;
+  top: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  background: yellowgreen;
+  background: black;
   z-index: 98;
 }
 
-.animate.home-img {
+/* .animate.home-img {
   width: 50%;
-}
+} */
 
 .logo .animate,
 .navbar .animate,
@@ -704,6 +735,36 @@ span {
   animation: showRight 1s ease forwards;
   animation-delay: calc(.3s * var(--i));
 }
+
+.animate.scroll {
+  transition: 1s ease;
+  transition-delay: calc(.3s / var(--i));
+  animation: none;
+}
+
+/* section:nth-child() .animate.scroll,
+section.footer .animate.scroll {
+  background: var(--second-bg-color);
+} */
+
+.footer .animate.scroll {
+  background: var(--second-bg-color);
+}
+
+.education .education-box .animate.scroll {
+  width: 105%;
+}
+
+.about.show-animate .animate.scroll,
+.education.show-animate .animate.scroll,
+/* .education.show-animate .education-box .animate.scroll, */
+.skills.show-animate .animate.scroll,
+.contact.show-animate .animate.scroll,
+.footer.show-animate .animate.scroll {
+  transition-delay: calc(.3s * var(--i));
+  width: 0;
+}
+
 
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
@@ -717,7 +778,7 @@ span {
     padding: 2rem 4%;
   }
 
-  .section {
+  section {
     padding: 10rem 4% 2rem;
   }
 
@@ -727,6 +788,12 @@ span {
 
   .footer {
     padding: 2rem 4%;
+  }
+}
+
+@media (max-width: 850px) {
+  .animate.home-img {
+    width: 55%;
   }
 }
 
@@ -745,7 +812,7 @@ span {
     left: -100%;
     width: 100%;
     padding: 1rem 4%;
-    background: black;
+    background: var(--main-color);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     z-index: 1;
     transition: .25s ease;
@@ -801,7 +868,7 @@ span {
     font-size: 50%;
   }
 
-  .home-content {
+  .home-content h1 {
     display: flex;
     flex-direction: column;
   }
