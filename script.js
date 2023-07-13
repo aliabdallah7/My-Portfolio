@@ -1,4 +1,15 @@
-var typed = new Typed(".text", {
+//Navbar activation
+const list = document.querySelectorAll('.list');
+function activelink(){
+    list.forEach((item) =>
+    item.classList.remove('active'));
+    this.classList.add('active');
+}
+list.forEach((item) => 
+item.addEventListener("click",activelink));
+
+//Role
+var typed = new Typed(".text1", {
     strings: ["Junior Software Engineer" , "Junior Data Analyst"],
     typeSpeed: 110,
     backSpeed: 110,
