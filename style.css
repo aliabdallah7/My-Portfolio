@@ -938,6 +938,10 @@ section.footer .animate.scroll {
 
 
 /* ---------------Contact Boxes---------------- */
+.contact {
+  min-height: 110vh;
+}
+
 .container.contact__Container {
   width: 100%;
   position: relative;
