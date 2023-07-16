@@ -233,7 +233,7 @@ section {
   background: transparent;
   border: .2rem solid var(--main-color);
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 25px;
   color: var(--main-color);
   z-index: 1;
   overflow: hidden;
@@ -533,7 +533,7 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-  width: 90%;
+  width: 85%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
@@ -554,7 +554,7 @@ span {
 
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-  width: 65%;
+  width: 80%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
@@ -566,7 +566,7 @@ span {
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-  width: 85%;
+  width: 65%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span {
@@ -576,7 +576,8 @@ span {
 
 .contact {
   min-height: auto;
-  padding-bottom: 7rem;
+  padding-bottom: 5rem;
+  padding-top: 12rem;
 }
 
 .contact h2 
@@ -586,7 +587,7 @@ span {
   transform: translateX(-50%);
 }
 
-.contact form {
+/* .contact form {
   max-width: 70rem;
   margin: 0 auto;
   text-align: center;
@@ -652,7 +653,7 @@ span {
 
 .contact form .btn-box.btns .btn {
   cursor: pointer;
-}
+} */
 
 
 .footer {
@@ -938,10 +939,6 @@ section.footer .animate.scroll {
 
 
 /* ---------------Contact Boxes---------------- */
-.contact {
-  min-height: 105vh;
-}
-
 .container.contact__Container {
   width: 100%;
   position: relative;
@@ -968,8 +965,8 @@ section.footer .animate.scroll {
   border-radius: 1.2rem;
   text-align: center;
   border: 1px solid transparent;
-  width: 100%; /* Adjust the width as per your preference */
-  max-width: 400px; /* Adjust the max-width as per your preference */
+  width: 100%;
+  max-width: 400px;
 }
 
 .contact__option:hover {
@@ -979,8 +976,9 @@ section.footer .animate.scroll {
 
 .bx.bx-envelope,
 .bx.bxl-whatsapp,
+.contact__option .bx.bxl-github,
 .bx.bxl-messenger {
-  font-size: 3.2rem;
+  font-size: 4.2rem;
   margin-bottom: 1rem;
 }
 
