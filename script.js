@@ -11,8 +11,8 @@ item.addEventListener("click",activelink));
 //Role
 var typed = new Typed(".text1", {
     strings: ["Junior Software Engineer" , "Junior Data Scientist"],
-    typeSpeed: 110,
-    backSpeed: 110,
+    typeSpeed: 90,
+    backSpeed: 90,
     startDelay: 2100,
     backDelay: 1000,
     loop: true
