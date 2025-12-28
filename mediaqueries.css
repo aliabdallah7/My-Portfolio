@@ -108,8 +108,8 @@
     text-align: justify;
   }
   .details-container {
-  padding-left: .8rem;
-  padding-right: .8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   flex: 1;
@@ -119,16 +119,26 @@
   border-color: rgb(163, 163, 163);
   text-align: center;
   }
-  .project-container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
+.containers-for-projects {
+  flex-direction: column;
 }
+.Skills-containers {
+  flex-direction: column;
+}
+}
+@media screen and (max-width: 400px) {
+
+  .details-container 
+  {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+  }
 }

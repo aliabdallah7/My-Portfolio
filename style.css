@@ -312,19 +312,6 @@ section {
   text-align: center;
 }
 
-.project-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-}
-
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -365,7 +352,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 1.2rem;
   justify-content: space-around;
 }
 
