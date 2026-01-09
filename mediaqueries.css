@@ -52,6 +52,20 @@
   .contact-info-upper-container {
     flex-wrap: wrap;
   }
+  .section-container{
+    align-self: center;
+    align-items: center;
+    align-content: center;
+  }
+  .title-about{
+  margin-bottom: 1rem;
+  }
+  .containers-for-projects {
+  flex-direction: column;
+  }
+  .Skills-containers {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -104,6 +118,9 @@
   .title {
     font-size: 2rem;
   }
+  .title-about{
+    margin-bottom: 1rem;
+  }
   .text-container {
     text-align: justify;
   }
@@ -123,6 +140,9 @@
   flex-direction: column;
 }
 .Skills-containers {
+  flex-direction: column;
+}
+.about2-containers {
   flex-direction: column;
 }
 }
