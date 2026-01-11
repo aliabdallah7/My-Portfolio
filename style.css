@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f0eee9 !important;
 }
 
 html {
@@ -198,9 +199,7 @@ section {
   font-size: 3rem;
   text-align: center;
 }
-.title-about{
-  margin-bottom: 6rem;
-}
+
 #socials-container {
   display: flex;
   justify-content: center;
@@ -269,6 +268,11 @@ section {
   position: relative;
 }
 
+#about .details-container{
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
@@ -277,7 +281,7 @@ section {
 }
 
 .about-details-container {
-  max-width: 900px;
+  max-width: 950px;
   justify-content: center;
   flex-direction: column;
 }
@@ -307,17 +311,28 @@ section {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   flex: 1;
-  background: transparent;
-  backdrop-filter: blur(5px);
+  background: transparent !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(200, 200, 200, 0.5) !important;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
 
+.details-container:hover {
+  background: transparent !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(15px) !important;
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: auto;
 }
 
 .section__pic-container {
@@ -326,7 +341,7 @@ section {
   margin: auto 0;
 }
 
-/* EXPERIENCE SECTION */
+/* Skills SECTION */
 
 #experience {
   position: relative;
@@ -436,7 +451,7 @@ article .icon {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin: 1rem;
+  margin: 1.5rem;
   background-color: transparent;
 }
 
@@ -477,28 +492,8 @@ footer p {
   z-index: -1 !important;
 } */
 
-/* Light gray background to see the network better */
-body {
-  background-color: white !important;/
-}
 
 /* GLASSMORPHISM - Override the white background completely */
-.details-container {
-  background: transparent !important;
-  backdrop-filter: blur(5px) !important;
-  -webkit-backdrop-filter: blur(5px) !important;
-  border: 1px solid rgba(200, 200, 200, 0.5) !important;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
-  transition: all 0.3s ease !important;
-}
-
-.details-container:hover {
-  background: transparent !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
-  transform: translateY(-8px) scale(1.02) !important;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
-}
 
 /* Project cards - color-container */
 .color-container {
@@ -514,14 +509,6 @@ body {
   -webkit-backdrop-filter: blur(15px) !important;
   transform: translateY(-8px) scale(1.02) !important;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* Contact info box */
-.contact-info-upper-container {
-  background: rgba(255, 255, 255, 0.6) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(200, 200, 200, 0.5) !important;
 }
 
 /* Photo hover effects */

@@ -145,6 +145,9 @@
 .about2-containers {
   flex-direction: column;
 }
+.contact-info-upper-container {
+  flex-direction: column;
+}
 }
 @media screen and (max-width: 400px) {
 
